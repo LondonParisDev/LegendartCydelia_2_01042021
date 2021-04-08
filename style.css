@@ -1,13 +1,12 @@
-html
-{
-    margin: 20px;
-}
+
 body
 {
     font-family: 'Raleway', sans-serif;
-    margin-top: 0;
-    margin: 25px;
-    height: 100%;
+    margin: 0;
+}
+.MAIN   
+{
+        margin: 0 30px 0 30px;
 }
 
 /*HEADER*/
@@ -42,20 +41,41 @@ body
     font-weight: bold;
     margin: 0;
     padding: 0;
+
 }
-.ancre_header a:hover
+.ancre_1_2 a:hover
 {
     background-color: white;
     display: flex;
     align-items: flex-start;
     border-top: blue 2px solid;
+    color: blue;
     line-height: 70px;
-    padding: 0 20px;
 }
-.ancre_header a:link
+.ancre_header a
 {
     text-decoration: none;
 }
+.ancre_1_2_3 
+{
+    display: flex;
+  
+}
+.ancre_3 a
+{
+    color: blue;
+}
+.ancre_1_2 a
+{
+    color: black;
+    text-decoration: none;
+}
+.ancre_1_2
+{
+    display: flex;
+}
+
+
 
 /*SECTION 1*/
 
@@ -135,6 +155,11 @@ body
     justify-content: center;
     align-items: center;
 }
+.button_
+{
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -149,6 +174,7 @@ body
 .filtre_icones h3
 {
     font-size: 13px;
+    margin-left: 10px;
 }
 .icones_4
 {
@@ -161,7 +187,7 @@ body
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    text-align: center
 }
-.icone
+.icone_
 {
     margin-left: 10px;
     border:  #F2F2F2 2px solid;
@@ -169,22 +195,24 @@ body
     width: 200px;
     height: 40px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
-.icone a:link
+.icone 
 {
     text-decoration: none;
-    margin: 10px;
+    color: black;
+    display: flex;
+    position: relative;
+    left: -2px;
 }
 .icone i
 {
     color: #0065FC;
     border:  white 2px solid;
     border-radius: 25px;
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     background-color: #DEEBFF;
     display: flex;
     justify-content: center;
@@ -233,6 +261,11 @@ body
     width: 20px;
     height: 20px;
 }
+.icone_ a:hover
+{
+    transform: scale(1.3);
+    transition: 300ms;
+}
 
 /*SECTION 3*/
 
@@ -241,6 +274,7 @@ body
     width: 100%;
     height: 100%;
     text-decoration: none;
+    color: black;
     display: flex;
     flex-direction: column;
 }
@@ -249,7 +283,7 @@ body
     background-color: #F2F2F2;
     border: 5px #F2F2F2 solid;
     border-radius: 25px;
-    min-width: 70%;
+    min-width: 69%;
 }
 .conteneur_section_hebergement h2
 {
@@ -266,6 +300,7 @@ body
 .bottom_section_3 a
 {
     text-decoration: none;
+    color: black;
 }
 .images_hebergement
 {
@@ -310,7 +345,7 @@ body
     flex-direction: column;
     width: 250px;
     height: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 130px;
     min-width: 200px;
 }
 .hebergements a:hover
@@ -338,7 +373,7 @@ body
     background-color: #F2F2F2;
     border: 5px #F2F2F2 solid;
     border-radius: 25px;
-    min-width: 30%;
+    min-width: 20%;
     margin-left: 20px;
     
 }
@@ -355,14 +390,13 @@ body
     margin-left: 10px;
     margin-left: 20px;
     font-size: small;
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    
 }
 .aside_description h3
 {
     margin: 0;
 }
-
 
 .hebergement_aside
 {
@@ -372,8 +406,6 @@ body
     object-fit: cover;
     margin: 0px 20px 30px 20px;
     background-color: white;
-    width: 250px;
-    height: 130px;
 }
 .hebergement_aside a:hover
 {
@@ -385,12 +417,14 @@ body
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 30px 0 30px;
     
 }
 .lien_aside
 {
     display: flex;
     text-decoration: none;
+    color: black;
 }
 aside_etoiles
 {
@@ -408,7 +442,7 @@ flex-direction: column;
 .activite_ img
 {
     width: 100%;
-    height: 300px;
+    height: 290px;
     border: 0px ;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
@@ -427,17 +461,27 @@ flex-direction: column;
     border-radius: 25px;
     width: 22%;
 }
-.images_2_3 img
+.images_2 img
 {
     width: 100%;
-    height: 120px;
+    height: 135px;
     border: 0px ;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
 }
+.images_3 img
+{
+    width: 100%;
+    height: 80px;
+    border: 0px ;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+}
+
 .images_2_3
 {
     width: 22%;
+    ;
 }
 .activite_fortdepomegues
 {
@@ -448,6 +492,7 @@ flex-direction: column;
 {
     border-radius: 25px;
     box-shadow: 2px 2px 5px 5px rgba(118, 118, 138, 0.2);
+    margin-top: 40px;
 }
 .images_2_3 h3
 {
@@ -456,13 +501,21 @@ flex-direction: column;
     font-size: small;
     margin: 20px;
 }
-.images_5_6 img
+.images_5 img
 {
     width: 100%;
-    height: 120px;
+    height: 80px;
     border: 0px ;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
+}
+.images_6 img
+{
+    width: 100%;
+    height: 135px;
+    border: 0px ;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover; 
 }
 .images_5_6 h3
 {
@@ -479,9 +532,51 @@ flex-direction: column;
 {
     border-radius: 25px;
     box-shadow: 2px 2px 5px 5px rgba(118, 118, 138, 0.2);
+    margin-bottom: 40px;
 }
 .activite_parclongchamps
 {
     border-radius: 25px;
     box-shadow: 2px 2px 5px 5px rgba(118, 118, 138, 0.2);
+}
+.lien_activite
+{
+    text-decoration: none;
+    color: black;
+}
+.activite_description
+{
+    display: flex;
+}
+
+/*FOOTER*/
+
+.conteneur_footer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    margin-top: 40px;
+    
+}
+.footer_3
+{
+    display: flex;
+}
+.a_propos
+{
+    margin-left: 30px;
+}
+.nos_hebergements
+{
+    margin-left: 300px;
+}
+.assistance
+{
+    margin-left: 300px;
+}
+.footer_ 
+{
+    text-decoration: none;
+    color: black;
 }
