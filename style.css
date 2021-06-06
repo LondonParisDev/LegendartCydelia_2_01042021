@@ -69,6 +69,7 @@ body
 {
     color: black;
     text-decoration: none;
+    height: 55px;
 }
 .ancre_1_2
 {
@@ -106,8 +107,8 @@ body
     border:   #F2F2F2 2px solid;
     background-color:  #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-    width: 39px;
-    height: 40px;
+    width: 40px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +132,7 @@ body
     font-size: 13px;
 }
 
-.barre button
+.button_
 {
     border:  #F2F2F2 2px solid;
     border-radius: 0px 15px 15px 0px;
@@ -139,10 +140,11 @@ body
     height: auto;
     font-weight: bold;
     background-color: #0065FC;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: white;
 }
 .barre
 {
@@ -155,10 +157,10 @@ body
     justify-content: center;
     align-items: center;
 }
-.button_
+.button_logo
 {
     text-decoration: none;
-    color: white;
+    display: none;
 }
 
 
@@ -174,7 +176,9 @@ body
 .filtre_icones h3
 {
     font-size: 13px;
-    margin-left: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
 }
 .icones_4
 {
@@ -192,7 +196,6 @@ body
     margin-left: 10px;
     border:  #F2F2F2 2px solid;
     border-radius: 25px;
-    width: 200px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -380,8 +383,8 @@ body
 .conteneur_aside img
 {
     width: 40%;
-    height: 130px;
-    border-radius: 25px 0px 0px 25px;
+    height: 110px;
+    border-radius: 10px 0px 0px 10px;
     object-fit: cover;
 }
 .aside_description
@@ -401,11 +404,12 @@ body
 .hebergement_aside
 {
     display: flex;
-    border: 8px white solid;
-    border-radius: 25px 25px 25px 25px;
+    border: 5px white solid;
+    border-radius: 15px;
     object-fit: cover;
     margin: 0px 20px 30px 20px;
     background-color: white;
+    width: 75%;
 }
 .hebergement_aside a:hover
 {
@@ -425,6 +429,7 @@ body
     display: flex;
     text-decoration: none;
     color: black;
+    min-width: 100%;
 }
 aside_etoiles
 {
@@ -553,15 +558,16 @@ flex-direction: column;
 
 .conteneur_footer
 {
-    display: flex;
-    justify-content: space-between;
     background-color: #F2F2F2;
     margin-top: 40px;
+    flex-wrap: wrap;
+    min-width: 100%;
     
 }
 .footer_3
 {
     display: flex;
+    justify-content: space-between;
 }
 .a_propos
 {
@@ -579,4 +585,222 @@ flex-direction: column;
 {
     text-decoration: none;
     color: black;
+}
+@media screen and (max-width: 650px)
+{
+    
+    .MAIN{
+        margin:0;
+    }
+    .conteneur_header
+    {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .conteneur_header img
+    {
+        width: 100px;
+        
+    }
+    
+    .ancre_header
+    {
+        width: 100%;
+    }
+    .ancre_1_2 
+    {
+        width: 100%;
+        border-bottom: 2px solid lightgrey;
+    }
+    .ancre_1_2 li
+    {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .ancre_1_2 a:hover
+    {
+        border-bottom: 2px solid blue;
+        width: 100%;
+        border-top: none;
+        justify-content: center;
+    }
+    .ancre_3
+    {
+        position: absolute;
+        top: 3px;
+        right: -5px;
+    }
+    .section_barre_search h2
+    {
+        margin-left: 10px;
+        padding-top: 20px;
+    }
+    .section_barre_search span
+    {
+        margin-left: 10px;
+    }
+    .barre_search
+    {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .icone_barre_search
+    {
+
+    }
+    .button_
+    {
+        display: none;
+    }
+    .barre input 
+    {
+        border-right: none;
+    }
+    .button_logo
+    {
+        border:  #F2F2F2 2px solid;
+        border-radius: 18px;
+        width: 45px;
+        height: 45px;
+        background-color: #0065FC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        
+    }
+    .conteneur_aside 
+    {
+       margin: 0;
+       border: 0;
+       border-radius: 0;
+    }
+    .conteneur_aside .h2_i
+    {
+        margin: 0;
+    }
+    .section_hebergement
+    {
+        flex-direction: column-reverse;
+    }
+    .aside_description
+    {
+        margin-top: 10px;
+    }
+    .aside_etoiles
+    {
+        margin-top: 40px;
+    }
+    .aside_description p
+    {
+        margin-top: 5px;
+    }
+    .hebergement_aside
+    {
+        margin-bottom: 15px;
+        margin-left: 10px;
+        width: 85%;
+    }
+    .filtre_icones
+    {
+        flex-wrap: wrap;
+    }
+    .filtre_icones h3
+    {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .icones_4
+    {
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    .icone_
+    {
+        margin-bottom: 10px;
+    }
+    .icone_info
+    {
+        margin: 10px;
+        margin-top: -5px;
+        margin-bottom: 20px;
+    }
+    .conteneur_section_hebergement
+    {
+        background: white;
+        border: 0;
+    }
+    .hebergements 
+    {
+        width: 95%;
+    }
+    .conteneur_section_activites h2
+    {
+        margin-left: 15px;
+    }
+    .conteneur_activites
+    {
+        flex-direction: column;
+    }
+    .h2_i h2
+    {
+        margin-left: 20px;
+    }
+    .h2_i
+    {
+        margin: 0;
+        width: 95%;
+        font-size: small;
+    }
+    .activite_
+    {
+        width: 85%;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    .activite_ img
+    {
+       height: 130px;
+    }
+    .images_2_3
+    {
+        width: 85%;
+        margin-left: 30px;
+    }
+    .images_2_3 img
+    {
+        height: 130px;
+    }
+    .images_2
+    {
+
+    }
+    .images_3
+    {
+        margin-bottom: 30px;
+    }
+    .images_5_6
+    {
+        width: 85%;
+        margin-left: 30px;
+    }
+    .images_5_6 img
+    {
+        height: 130px;
+    }
+    .footer_3
+    {
+        flex-direction: column;
+    }
+    .nos_hebergements
+    {
+        margin-left: 30px;
+    }
+    .assistance
+    {
+        margin-left: 30px;
+    }
 }
